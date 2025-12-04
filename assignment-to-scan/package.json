@@ -1,0 +1,35 @@
+{
+  "name": "module_7_project",
+  "version": "1.0.0",
+  "description": "Student: Steffen Walker",
+  "main": "index.js",
+  "dependencies": {
+    "corepack": "^0.31.0",
+    "npm": "^10.9.2"
+  },
+  "devDependencies": {
+    "jest": {
+      "reporters": [
+        "default",
+        ["jest-junit", { "outputDirectory": "test-results/jest" }]
+      ]
+    },
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-junit": "^16.0.0",
+    "jsdom": "^26.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SWalker-rrc/module_7_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SWalker-rrc/module_7_project/issues"
+  },
+  "homepage": "https://github.com/SWalker-rrc/module_7_project#readme"
+}
