@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/donations_page.css">
+  <link rel="stylesheet" href="https://use.typekit.net/dwz3vgn.css">
+  <link rel="icon" type="image/x-icon" href="media/svg/evil-river-logo-outline.svg">
+  <title>Donation Tracker | Evil River Financial</title>
+</head>
+
+<body>
+<div id="page-wrapper">
+  <header>
+    <div id="header-logo">
+      <img src="media/svg/evil-river-logo.svg" alt="Evil River Logo" style="width: 3em; height: 3em;">
+      <h1>Evil River Financial</h1>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="donations.html">Donation</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="event.html">Event</a>
+    </nav>
+  </header>
+  
+  <section id="banner-img">
+    <img src="media/images/donation_page.jpg" alt="Two people making a handshake at work.">
+  </section>
+  
+  <section>
+    <h1>Donation Tracker</h1>
+    
+    <p>
+      The Donation Tracker is an essential tool for managing PiXELL River Financial's 
+      charitable contributions. This component allows users to input and track their 
+      donations to various charities, providing a clear record of the company's 
+      philanthropic activities. Donation Tracker can provide meaningful insights, 
+      such as total donations made over time, allowing the company to assess and 
+      showcase its impact on the community.
+    </p>
+    
+    <button id="add_donation" onclick="addDonation()">Add</button>
+
+    <br><br>
+    
+    <div id="table_div">
+        <table id="donation_table">
+            <tr>
+                <th>ID</th>
+                <th>Charity Name</th>
+                <th>Donation Amount</th>
+                <th>Date of Donation</th>
+                <th>Donor Comment</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Richard Society Association</td>
+                <td>$100</td>
+                <td>2025-10-1</td>
+                <td>Larry...</td>
+                <td><button id="delete_button">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+    
+    <form id="donation_prompt" onsubmit="processData()">
+        <h2>Donation</h2>
+        
+        <div id="donation_form">
+          <div>
+            <label for="charity_name">Charity Name:</label><br>
+            <input type="text" id="charity_name" name="charity_name">
+          </div>
+            
+          <div>
+            <label for="donation_amount">Donation Amount:</label><br>
+            <input type="text" id="donation_amount" name="donation_amount">
+          </div>
+          
+          <div>
+            <label for="date_of_donation">Date of Donation:</label><br>
+            <input type="date" id="date_of_donation" name="date_of_donation">
+          </div>
+            
+          <div>
+            <p>Donor Comment:</p>
+            <textarea rows="3" cols="50" name="donor_comment" id="donor_comment" placeholder="Donor Comment"></textarea>
+          </div>
+        </div>
+        
+        <button id="submit_button" type="submit">Donate</button>
+        <button type="reset" id="reset_form">Reset</button>
+    </form>
+  </section>
+  
+  <section id="explore">
+    <h2>Community Support Tracker Tools</h2>
+    
+    <p>
+      PiXELL River Financial prides itself on being a good citizen. 
+      As part of our commitment to the communities in which we live and work, 
+      we have a Community Support Tracker tool. 
+      This will help us monitor and manage our various community support initiatives, 
+      ensuring we're making a meaningful impact.
+    </p>
+  </section>
+  
+  <section id="explore-links">
+    <a href="donations.html">
+      <div class="link-donation"><p>Donations</p></div>
+    </a>
+
+    <a href="volunteer.html">
+      <div class="link-volunteer"><p>Volunteer</p></div>
+    </a>
+
+    <a href="event.html">
+      <div class="link-event"><p>Event</p></div>
+    </a>
+  </section>
+
+  <footer>
+    <div id="footer-credits"> 
+      <a href="https://www.linkedin.com/in/elijah-juayang/">Elijah Juayang</a> &bull;
+      <a href="https://www.linkedin.com/in/steffen-walker-3a9022214/">Steffen Walker</a> &bull;
+      <a href="https://www.linkedin.com/in/braden-warren-06a743339/">Braden Warren</a>
+    </div>
+    <p id="footer-extra-credits">
+      <a href="https://fonts.adobe.com/fonts/latino-gothic-variable">Latino Gothic Variable</a> 
+      licensed from 
+      <a href="https://fonts.adobe.com/">Adobe Fonts</a>
+    </p>
+  </footer>
+</div>
+<script src="javascript/donations.js"></script>
+</body>
+</html>

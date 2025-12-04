@@ -1,0 +1,186 @@
+/* CSS Document */
+
+.successMsg {
+  color: #3E840D;
+  font-size: 1em;
+  margin: 10px 0px 0px 0px;
+  display: none;
+}
+
+/* ----- Error Handling ----- */
+
+.error-msg {
+  color: #FF0004;
+  font-size: 0.9em;
+  margin: 0px;
+  display: none;
+}
+
+.display-error {
+  display: block;
+}
+
+.error-highlight {
+  border: 1px solid red;
+  background-color: #FFDDDE;
+}
+
+/* ----- Star Rating ----- */
+
+#rating-label {
+  margin: 0px;
+}
+
+.rating {
+  margin-top: 40px;
+  border: none;
+  float: left;
+}
+
+.rating > label {
+  color: #737373;
+  float: right;
+  cursor: pointer;
+}
+
+.rating > label:before {
+  margin: 5px;
+  font-size: 1.3em;
+  font-family: 'Font Awesome\ 5 Free', sans-serif;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  content: "\f005";
+  display: inline-block;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #F79426;
+  text-shadow: 0 0 5px #FFDD00;
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #FECE31;
+  text-shadow: 0 0 5px #FFDD00;
+}
+
+/* ----- Form Styling ----- */
+
+#form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(100,100,100,0.20);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#form-content div {
+  text-align: center;
+  margin: 5px;
+}
+
+#form-content input {
+  font-family: latino-gothic-variable, sans-serif;
+  font-variation-settings: "slnt" 1, "wdth" 55, "wght" 40;
+  padding: 0.625em;
+  margin-bottom: 0.3em;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+#nameInput {
+  width: 20em;
+}
+
+#numbersInput {
+  width: 4em;
+}
+
+/* ----- Form Buttons ----- */
+
+#submit-form, #reset-form {
+  font-family: latino-gothic-variable, sans-serif;
+  font-variation-settings: "slnt" 1, "wdth" 60, "wght" 60;
+  margin-top: 10px;
+  margin-right: 5px;
+  padding: 1em 2em;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
+}
+
+#submit-form:hover {
+  background-color: #FFAE00;
+  color: #1E1E1E;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#reset-form:hover {
+  background-color: #DC494C;
+  color: #1E1E1E;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ----- Table Styling ----- */
+
+#volunteer-table {
+  padding: 10px;
+  background-color: rgba(100,100,100,0.20);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#volunteer-table table {
+  margin: 10px auto;
+}
+
+#volunteer-table th {
+  font-variation-settings: "slnt" 1, "wdth" 75, "wght" 70;
+  font-weight: normal;
+  color: #EDEDED;
+  background-color: #1E1E1E;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+#volunteer-table td {
+  font-variation-settings: "slnt" 100, "wdth" 55, "wght" 40;
+  background-color: rgba(255,255,255,0.50);
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.15);
+  font-size: 1em;
+  padding: 10px;
+}
+
+#volunteer-table button {
+  font-family: latino-gothic-variable, sans-serif;
+  font-variation-settings: "slnt" 1, "wdth" 60, "wght" 60;
+  color: #1E1E1E;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+}
+  
+#volunteer-table button:hover {
+  background-color: #DC494C;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.table-rating {
+  color: #F79426;
+  font-family: 'Font Awesome\ 5 Free', sans-serif;
+  font-weight: bold;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}

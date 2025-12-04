@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/volunteer_page.css">
+  <link rel="stylesheet" href="https://use.typekit.net/dwz3vgn.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.1/css/all.css">
+  <link rel="icon" type="image/x-icon" href="media/svg/evil-river-logo-outline.svg">
+  <title>Volunteer Hours Tracker | Evil River Financial</title>
+</head>
+
+<body>
+<div id="page-wrapper">
+  <header>
+    <div id="header-logo">
+      <img src="media/svg/evil-river-logo.svg" alt="Evil River Logo" style="width: 3em; height: 3em;">
+      <h1>Evil River Financial</h1>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="donations.html">Donation</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="event.html">Event</a>
+    </nav>
+  </header>
+  
+  <section id="banner-img">
+    <img src="media/images/volunteering.jpg" alt="People at an office collaborating with sticky notes on a wall.">
+  </section>
+  
+  <section>
+    <h1>Volunteer Hours Tracker</h1>
+    
+    <p>
+      The Volunteer Hours Tracker is designed to account for the volunteer work 
+      performed by PiXELL River Financial's employees. Recognizing the importance 
+      of community service, PiXELL River allows its employees to devote a certain 
+      amount of paid time off to volunteer work. This system promotes a culture 
+      of community service within the organization while also ensuring employees 
+      are recognized for their contributions.
+    </p>
+    
+    <div id="volunteer-table" class="hidden">
+      <table>
+        <thead>
+          <tr>
+            <th>Charity Name</th>
+            <th>Hours</th>
+            <th>Date</th>
+            <th>Experience Rating</th>
+            <th></th>
+          </tr>
+        </thead>
+        
+        <tbody><!-- Volunteers will be displayed here. --></tbody>
+      </table>
+    </div>
+    
+    <h2>Volunteer Form</h2>
+    
+    <form id="volunteer-hours-tracker">
+      <div id="form-content">
+        <div>
+          <label for="nameInput">Charity Name:</label>
+          <br>
+          <input type="text" id="nameInput" name="name" placeholder="Charity Name">
+          <p id="nameError" class="error-msg">test</p>
+        </div>
+
+        <div>
+          <label for="numbersInput">Hours Volunteered:</label><br>
+          <input type="number" id="numbersInput" name="numbers" min="0"> 
+          <p id="numbersError" class="error-msg">test</p>
+        </div>
+
+        <div>
+          <label for="dateInput">Date Volunteered:</label><br>
+          <input type="date" id="dateInput" name="date">
+          <p id="dateError" class="error-msg">test</p>
+        </div>
+
+        <div>
+          <p id="rating-label">Volunteer Experience Rating:</p>
+          <div class="rating">
+            <input type="radio" id="star5" name="rate" value="5" />
+            <label class="star" for="star5" title="Excellent" aria-hidden="true"></label>
+            <input type="radio" id="star4" name="rate" value="4" />
+            <label class="star" for="star4" title="Great" aria-hidden="true"></label>
+            <input type="radio" id="star3" name="rate" value="3" />
+            <label class="star" for="star3" title="Good" aria-hidden="true"></label>
+            <input type="radio" id="star2" name="rate" value="2" />
+            <label class="star" for="star2" title="Okay" aria-hidden="true"></label>
+            <input type="radio" id="star1" name="rate" value="1" />
+            <label class="star" for="star1" title="Bad" aria-hidden="true"></label>
+          </div>
+          <br><br>
+          <p id="rateError" class="error-msg">test</p>
+        </div>
+      </div>
+      
+      <button type="submit" id="submit-form" name="Submit">Submit</button>
+      <button type="reset" id="reset-form" name="Reset">Reset</button>
+      <p id="submittedMsg" class="successMsg">Successfully Registered!</p>
+    </form>
+  </section>
+  
+  <section id="explore">
+    <h2>Community Support Tracker Tools</h2>
+    
+    <p>
+      PiXELL River Financial prides itself on being a good citizen. 
+      As part of our commitment to the communities in which we live and work, 
+      we have a Community Support Tracker tool. 
+      This will help us monitor and manage our various community support initiatives, 
+      ensuring we're making a meaningful impact.
+    </p>
+  </section>
+  
+  <section id="explore-links">
+    <a href="donations.html">
+      <div class="link-donation"><p>Donations</p></div>
+    </a>
+
+    <a href="volunteer.html">
+      <div class="link-volunteer"><p>Volunteer</p></div>
+    </a>
+
+    <a href="event.html">
+      <div class="link-event"><p>Event</p></div>
+    </a>
+  </section>
+
+  <footer>
+    <div id="footer-credits"> 
+      <a href="https://www.linkedin.com/in/elijah-juayang/">Elijah Juayang</a> &bull;
+      <a href="https://www.linkedin.com/in/steffen-walker-3a9022214/">Steffen Walker</a> &bull;
+      <a href="https://www.linkedin.com/in/braden-warren-06a743339/">Braden Warren</a>
+    </div>
+    <p id="footer-extra-credits">
+      <a href="https://fonts.adobe.com/fonts/latino-gothic-variable">Latino Gothic Variable</a> 
+      licensed from 
+      <a href="https://fonts.adobe.com/">Adobe Fonts</a>
+    </p>
+  </footer>
+</div>
+<script src="javascript/volunteer.js"></script>
+</body>
+</html>
